@@ -1,4 +1,4 @@
-public class Tigre extends Felino {
+public class  Tigre extends Felino {
     private String color;
 
     public Tigre(String nombre, int edad, int cantidadCrias, String color) {
@@ -7,6 +7,8 @@ public class Tigre extends Felino {
     }
 
     // Getter y Setter para color
+
+
     public String getColor() {
         return color;
     }
@@ -14,6 +16,19 @@ public class Tigre extends Felino {
     public void setColor(String color) {
         this.color = color;
     }
+
+    @Override
+    public int cantidadCrias(int numCrias) {
+        return numCrias;
+    }
+
+    @Override
+    public void amamantar() {
+        System.out.println( "La leona esta amamantando" + getCrias()+ "crias" );
+    }
+
+    @Override
+    public void parir() {}
 
     // Metodo específico para Tigre
     public void rugir() {

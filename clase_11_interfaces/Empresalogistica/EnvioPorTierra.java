@@ -10,7 +10,7 @@ public class EnvioPorTierra implements Envio {
         this.peso = peso;
     }
 
-    // Getter y Setter para distancia
+    // Getter y Setter
     public double getDistancia() {
         return distancia;
     }
@@ -19,7 +19,7 @@ public class EnvioPorTierra implements Envio {
         this.distancia = distancia;
     }
 
-    // Getter y Setter para peso
+
     public double getPeso() {
         return peso;
     }

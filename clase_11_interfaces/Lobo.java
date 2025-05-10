@@ -7,6 +7,8 @@ public class Lobo extends Canino {
     }
 
     // Getter y Setter para tipoManada
+
+
     public String getTipoManada() {
         return tipoManada;
     }
@@ -14,6 +16,25 @@ public class Lobo extends Canino {
     public void setTipoManada(String tipoManada) {
         this.tipoManada = tipoManada;
     }
+
+    @Override
+    public String getNombre() {
+        return super.getNombre();
+    }
+
+
+    @Override
+    public int cantidadCrias(int numCrias) {
+        return numCrias;
+    }
+
+    @Override
+    public void amamantar() {
+        System.out.println( "La loba esta amamantando" + getCrias()+ "crias" );
+    }
+
+    @Override
+    public void parir() {}
 
     // Metodo específico para Lobo
     public void aullar() {

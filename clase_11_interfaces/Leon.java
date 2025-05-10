@@ -15,6 +15,19 @@ public class Leon extends Felino {
         this.raza = raza;
     }
 
+    @Override
+    public void amamantar() {
+        System.out.println( "La leona esta amamantando" + getCrias()+ "crias" );
+    }
+
+    @Override
+    public int cantidadCrias(int numCrias) {
+        return numCrias;
+    }
+
+    @Override
+    public void parir() {}
+
     // Metodo específico para León
     public void rugir() {
         System.out.println("¡El león está rugiendo!");

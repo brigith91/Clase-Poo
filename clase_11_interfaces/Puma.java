@@ -7,6 +7,8 @@ public class Puma extends Felino {
     }
 
     // Getter y Setter para velocidad
+
+
     public int getVelocidad() {
         return velocidad;
     }
@@ -15,8 +17,22 @@ public class Puma extends Felino {
         this.velocidad = velocidad;
     }
 
+    @Override
+    public int cantidadCrias(int numCrias) {
+        return numCrias;
+    }
+
+    @Override
+    public void amamantar() {
+        System.out.println( "La puma esta amamantando" + getCrias()+ "crias" );
+    }
+
+    @Override
+    public void parir() {}
+
     // Metodo específico para Puma
     public void correr() {
+
         System.out.println("El puma está corriendo a " + velocidad + " km/h.");
     }
 }

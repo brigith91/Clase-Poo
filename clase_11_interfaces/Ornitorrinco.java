@@ -10,6 +10,22 @@ public class Ornitorrinco implements Mamifero, Oviparo {
         this.crias = crias;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getCrias() {
+        return crias;
+    }
+
+    public void setCrias(int crias) {
+        this.crias = crias;
+    }
+
     // Métodos de Animal
     @Override
     public String getNombre() {
@@ -22,29 +38,35 @@ public class Ornitorrinco implements Mamifero, Oviparo {
     }
 
     // Métodos de Mamifero
+
+
     @Override
-    public int cantidadCrias() {
-        return crias;
+    public int cantidadCrias(int numCrias) {
+        return numCrias;
     }
 
     @Override
     public void amamantar() {
+
         System.out.println("El ornitorrinco amamanta a sus crías.");
     }
 
     @Override
     public void parir() {
-        System.out.println("Aunque es mamífero, el ornitorrinco no pare: pone huevos.");
+
+        System.out.println(" el ornitorrinco no pare.");
     }
 
     // Métodos de Oviparo
     @Override
     public void ponerHuevos() {
+
         System.out.println("El ornitorrinco pone huevos.");
     }
 
     @Override
     public void romperCascaron() {
+
         System.out.println("Las crías del ornitorrinco rompen el cascarón para nacer.");
     }
 }

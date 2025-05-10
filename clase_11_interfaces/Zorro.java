@@ -7,6 +7,8 @@ public class Zorro extends Canino {
     }
 
     // Getter y Setter para habitat
+
+
     public String getHabitat() {
         return habitat;
     }
@@ -15,8 +17,22 @@ public class Zorro extends Canino {
         this.habitat = habitat;
     }
 
+    @Override
+    public int cantidadCrias(int numCrias) {
+        return numCrias;
+    }
+
+    @Override
+    public void amamantar() {
+        System.out.println( "La zorra esta amamantando" + getCrias()+ "crias" );
+    }
+
+    @Override
+    public void parir() {}
+
     // Metodo específico para Zorro
     public void cazar() {
+
         System.out.println("El zorro está cazando.");
     }
 }

@@ -9,7 +9,24 @@ public abstract class Canino implements Mamifero {
         this.crias = crias;
     }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public int getCrias() {
+        return crias;
+    }
+
+    public void setCrias(int crias) {
+        this.crias = crias;
+    }
+
     public String getNombre() {
+
         return nombre;
     }
 
@@ -22,11 +39,10 @@ public abstract class Canino implements Mamifero {
     }
 
     public void parir() {
-        System.out.println(nombre + " (canino) ha parido.");
     }
 
-    public void amamantar() {
-        System.out.println(nombre + " (canino) está amamantando.");
-    }
+    public abstract int cantidadCrias(int numCrias);
+
+    public void amamantar() {}
 }
 

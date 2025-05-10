@@ -17,16 +17,35 @@ public abstract class Felino implements Mamifero {
         return edad;
     }
 
-    public int cantidadCrias() {
+    public int getCrias() {
         return crias;
     }
 
-    public void parir() {
-        System.out.println(nombre + " (felino) ha parido.");
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setCrias(int crias) {
+        this.crias = crias;
+    }
+
+    @Override
+    public void parir() {
+
+    }
+
+    @Override
     public void amamantar() {
-        System.out.println(nombre + " (felino) está amamantando.");
+
+    }
+
+    @Override
+    public int cantidadCrias(int numCrias) {
+        return 0;
     }
 }
 
